@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width =device-width,initial-scale=1,user-scalable=1,maximum-scale=1,minimum-scale=1">
+<meta name="apple-mobile-web-app-title" content="document">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/repeat.css">
+<link rel="stylesheet" type="text/css" href="font/iconfont.css">
+<title>Document</title>
+</head>
+
+<body>
+<div class="zt" id="zt">
+	<div class="column fl">
+		<div class="column_t">
+			<div class="column_t_n">
+				<img src="./image/t1.png" alt=""/>
+			</div>
+		</div>
+		<div class="column_y">
+			<h3>Olia Gozha</h3>
+			<p >BetRate：166<span class="iconfont icon-xingxing"></span></p>
+		</div>
+		<div class="column_an"><p class="iconfont icon-tianjia"></p><h3>CREATE CHALLENGE</h3></div>
+
+		<ul class="column_ul">
+			<li>
+				<h3 class="iconfont icon-xiaoxitixingchuangkoudanchufangshi"></h3>
+				<p>Activity Feed</p>
+			</li>
+			<li>
+				<h3 class="iconfont icon-mao"></h3>
+				<p>My Challenges</p>
+			</li>
+			<li>
+				<h3 class="iconfont icon-xinxi1"></h3>
+				<p>Discussions</p>
+			</li>
+			<li>
+				<h3 class="iconfont icon-shuju"></h3>
+				<p>My Stats</p>
+			</li>
+			<li>
+				<h3 class="iconfont icon-yonghu"></h3>
+				<p>My Connections</p>
+			</li>
+			<li>
+				<h3 class="iconfont icon-xingxing1"></h3>
+				<p>Best Best</p>
+			</li>
+		</ul>
+	</div>
+	<div class="main fl">
+		<div class="main_t">
+			<h3 class="pl iconfont icon-iconset0193" id="dianji"></h3>
+			<div class="main_t_z">
+				<h4 class="fl">Open</h4>
+				<h5 class="fl">Closed</h5>
+			</div>
+			<h3 class="pr iconfont icon-tianjia"></h3>
+		</div>
+		<div class="main_n">
+			<div class="main_n_1">
+				<img src="./image/t2.png" alt="" class="fl" />
+				<p class="fl">Martin Groove</p>
+				<h3 class="iconfont icon-xingxing fr">175</h3>
+			</div>
+			<div class="main_n_2">I Can basejump from the shard! Can you?</div>
+			<div class="main_n_3">
+				<img src="./image/t3.png">
+				<p>12:30:26</p>
+			</div>
+			<div class="main_n_4">
+				<h3 class="iconfont icon-yonghu pl1">7people</h3>
+				<p class="iconfont icon-mao">ACCEPT</p>
+				<h3 class="iconfont icon-icon-test pr1">share</h3>
+			</div>
+		</div>
+
+		<div class="main_n">
+			<div class="main_n_1">
+				<img src="./image/t2.png" alt="" class="fl" />
+				<p class="fl">Martin Groove</p>
+				<h3 class="iconfont icon-xingxing fr">175</h3>
+			</div>
+			<div class="main_n_2">I Can basejump from the shard! Can you?</div>
+			<div class="main_n_3">
+				<img src="./image/t3.png">
+				<p>12:30:26</p>
+			</div>
+			<div class="main_n_4">
+				<h3 class="iconfont icon-yonghu pl1">7people</h3>
+				<p class="iconfont icon-mao">ACCEPT</p>
+				<h3 class="iconfont icon-icon-test pr1">share</h3>
+			</div>
+		</div> 
+	</div>
+</div>
+<script>
+	var dianji=document.getElementById("dianji");
+	var zt=document.getElementById("zt");
+
+	dianji.onclick=function(){
+		if(zt.style.left == 0+'rem'){
+			zt.style.left= -14+'rem';
+		}else{
+			zt.style.left= 0+'rem';
+		}
+
+		
+	}
+
+
+
+</script>
+
+<script>
+    window.onload = window.onresize = function(){		 
+        var view_width = document.getElementsByTagName('html')[0].getBoundingClientRect().width;
+		//找到标签名为html的第一个
+        var _html = document.getElementsByTagName('html')[0];
+		//如果屏幕宽度大于640 
+		//就用 640/16=40
+		//小于640的时候 不确定 也是尺寸/40
+        view_width>620?_html.style.fontSize = 620 / 16 + 'px':_html.style.fontSize = view_width / 16 + 'px';
+		//最大网页尺寸640 
+		//最大字体（根字体大小） 40
+    }
+</script>
+
+</body>
+</html>
